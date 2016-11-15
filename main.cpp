@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
     QStringList args = QCoreApplication::arguments();
-    if(args.count() != 2)
+    if(args.count() != 3)
         return 0;
-    QString mode = args[0];
-    QString path = args[1];
+    QString mode = args[1];
+    QString path = args[2];
 
     if(mode == "--check")
         checkFiles(path);
